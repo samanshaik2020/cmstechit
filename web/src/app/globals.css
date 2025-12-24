@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-sans: var(--font-open-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: var(--font-open-sans), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-background: #F9F9F8;
+  /* Light Off-White / Paper */
+  --color-accent: #C1A07F;
+  /* Muted Gold/Brown */
+  --color-text: #1A1817;
+  /* Near Black */
+  --color-muted: #666666;
+  --color-card: #FFFFFF;
+}
+
+/* Custom utilities if needed */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
