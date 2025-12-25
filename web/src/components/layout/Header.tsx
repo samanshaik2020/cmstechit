@@ -6,10 +6,9 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-    { name: "Services", href: "#services" },
-    { name: "Solutions", href: "#solutions" },
-    { name: "Realizations", href: "#portfolio" },
-    { name: "About", href: "#about" },
+    { name: "Services", href: "/services" },
+    { name: "Solutions", href: "/solutions" },
+    { name: "About", href: "/about" },
 ];
 
 export default function Header() {

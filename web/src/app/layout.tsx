@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   display: "swap",
 });
@@ -21,8 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.variable} antialiased bg-background text-text font-sans`}
+        className={`${montserrat.variable} antialiased bg-background text-text font-sans`}
       >
+        <SmoothScroll />
         {children}
       </body>
     </html>

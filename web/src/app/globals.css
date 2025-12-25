@@ -1,12 +1,9 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
-}
 
 @theme {
-  --font-sans: var(--font-open-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-serif: var(--font-open-sans), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: var(--font-montserrat), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 
   --color-background: #F9F9F8;
   /* Light Off-White / Paper */
