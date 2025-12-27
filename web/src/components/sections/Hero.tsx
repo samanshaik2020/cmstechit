@@ -228,7 +228,7 @@ export default function Hero() {
 
                         <div className="flex flex-wrap gap-4">
                             <Link
-                                href="#contact"
+                                href="/contact"
                                 className="px-8 py-4 bg-[#3E2723] text-white rounded-full font-semibold hover:bg-[#5D4037] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                             >
                                 Contact us

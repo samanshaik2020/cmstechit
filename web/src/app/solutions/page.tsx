@@ -28,7 +28,7 @@ export default function SolutionsPage() {
                 }
                 description="Our solutions are architected to handle growth from day one. We replace fragile MVPs with resilient, enterprise-grade platforms."
                 ctaText="Discuss Architecture"
-                ctaLink="#contact"
+                ctaLink="/contact"
                 align="left"
             >
                 <ArchitectMockup />
@@ -39,7 +39,7 @@ export default function SolutionsPage() {
                 title="Seamless Integration"
                 description="Break down data silos. We build custom middleware and API gateways that ensure your tools speak the same language, in real-time."
                 ctaText="Connect your systems"
-                ctaLink="#contact"
+                ctaLink="/contact"
                 align="right"
             >
                 <IntegrationMockup />
@@ -50,7 +50,7 @@ export default function SolutionsPage() {
                 title="Enterprise Security"
                 description="Security isn't an afterthought; it's our baseline. We implement bank-grade encryption, automated threat detection, and compliance standards by default."
                 ctaText="Secure your data"
-                ctaLink="#contact"
+                ctaLink="/contact"
                 align="left"
             >
                 <SecurityMockup />
@@ -61,7 +61,7 @@ export default function SolutionsPage() {
                 title="Continuous Delivery"
                 description="Speed without breakage. We build automated CI/CD pipelines that let you ship features daily with confidence, backed by self-healing cloud infrastructure."
                 ctaText="Modernize operations"
-                ctaLink="#contact"
+                ctaLink="/contact"
                 align="right"
             >
                 <DevOpsMockup />
@@ -87,7 +87,7 @@ export default function SolutionsPage() {
                             Our engineering team loves a difficult problem. Let's find the solution.
                         </p>
                         <Link
-                            href="/#contact"
+                            href="/contact"
                             className="inline-flex items-center px-8 py-4 bg-[#1A1817] text-white rounded-full font-bold hover:bg-gray-800 transition-all shadow-lg group"
                         >
                             Get a proposal

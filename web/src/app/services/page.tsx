@@ -145,7 +145,7 @@ export default function ServicesPage() {
                                 </h2>
                             </div>
                             <Link
-                                href="/#contact"
+                                href="/contact"
                                 className="hidden md:inline-flex items-center text-white hover:text-accent transition-colors mt-8 md:mt-0"
                             >
                                 Start a Conversation <ArrowRight className="ml-2 w-5 h-5" />

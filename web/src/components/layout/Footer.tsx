@@ -18,7 +18,7 @@ export default function Footer() {
                             Let’s discuss how our technology can amplify your business goals.
                         </p>
                         <Link
-                            href="#contact"
+                            href="/contact"
                             className="inline-flex items-center px-8 py-4 bg-black hover:bg-gray-800 text-white rounded-full font-semibold transition-all group shadow-lg"
                         >
                             Get a Custom Quote

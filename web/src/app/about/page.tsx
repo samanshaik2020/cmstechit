@@ -107,7 +107,7 @@ export default function AboutPage() {
                             Let's discuss how we can engineer a solution that fits your business goals.
                         </p>
                         <Link
-                            href="/#contact"
+                            href="/contact"
                             className="inline-flex items-center px-8 py-4 bg-[#1A1817] text-white rounded-full font-bold hover:bg-gray-800 transition-all shadow-lg group"
                         >
                             Start a Conversation

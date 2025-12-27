@@ -19,7 +19,7 @@ export default function ServiceCanvas({
     title,
     description,
     ctaText = "Travaillons ensemble",
-    ctaLink = "#contact",
+    ctaLink = "/contact",
     align = "left",
     children,
 }: ServiceCanvasProps) {

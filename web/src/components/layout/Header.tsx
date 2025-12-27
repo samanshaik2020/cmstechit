@@ -48,7 +48,7 @@ export default function Header() {
                 <div className="hidden md:flex items-center gap-4">
                     <span className="text-xs font-semibold text-gray-400">EN</span>
                     <Link
-                        href="#contact"
+                        href="/contact"
                         className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors shadow-lg"
                     >
                         Contact us
@@ -88,7 +88,7 @@ export default function Header() {
                             ))}
                             <div className="pt-2">
                                 <Link
-                                    href="#contact"
+                                    href="/contact"
                                     className="block w-full text-center bg-black text-white px-5 py-3 rounded-xl text-base font-medium"
                                     onClick={() => setIsOpen(false)}
                                 >
