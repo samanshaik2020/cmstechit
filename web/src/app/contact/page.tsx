@@ -43,14 +43,14 @@ export default function ContactPage() {
                                 <ContactItem
                                     icon={<Mail className="w-6 h-6" />}
                                     label="Email us"
-                                    value="hello@cmstechit.com"
-                                    href="mailto:hello@cmstechit.com"
+                                    value="info@cmstechit.com"
+                                    href="mailto:info@cmstechit.com"
                                 />
                                 <ContactItem
                                     icon={<Phone className="w-6 h-6" />}
                                     label="Call us"
-                                    value="+1 (555) 000-0000"
-                                    href="tel:+15550000000"
+                                    value="+91-9640881683"
+                                    href="tel:+919640881683"
                                 />
                                 <ContactItem
                                     icon={<MapPin className="w-6 h-6" />}
@@ -173,3 +173,4 @@ function InputGroup({
         </div>
     );
 }
+
