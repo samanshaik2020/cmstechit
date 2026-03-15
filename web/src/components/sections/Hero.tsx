@@ -218,7 +218,7 @@ export default function Hero() {
                                 transition={{ duration: 1, delay: 0.9, ease: "easeOut" }}
                                 className="inline-block"
                             >
-                                of SaaS
+                                of Web Apps
                             </motion.span>
                         </h1>
 

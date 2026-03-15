@@ -19,6 +19,34 @@ const projects = [
         image: "/placeholder-project-2.jpg",
         link: "https://seolnk.com"
     },
+    {
+        title: "TextBehindImage",
+        category: "Creative Web Tool",
+        description: "A web application for generating striking text-behind-image visuals with a clean, user-friendly workflow.",
+        image: "/placeholder-project-3.jpg",
+        link: "https://textbehindimage.com"
+    },
+    {
+        title: "PopiUp",
+        category: "Marketing Platform",
+        description: "A conversion-focused platform for creating engaging popups and on-site campaigns for modern websites.",
+        image: "/placeholder-project-4.jpg",
+        link: "https://popiup.com"
+    },
+    {
+        title: "NewsZ9",
+        category: "News Platform",
+        description: "A fast, content-rich news website designed for smooth reading experiences across desktop and mobile.",
+        image: "/placeholder-project-5.jpg",
+        link: "https://newsz9.com"
+    },
+    {
+        title: "Kitchen Made Health",
+        category: "Health & Wellness",
+        description: "A polished wellness-focused website built to showcase healthy living content, services, and brand trust.",
+        image: "/placeholder-project-6.jpg",
+        link: "https://kitchenmadehealth.com"
+    },
 ];
 
 export default function Portfolio() {

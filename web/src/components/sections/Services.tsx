@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Search, Activity, Cloud, Gauge, Play } from "lucide-react";
+import { ArrowUpRight, Search, Activity, Cloud, Gauge } from "lucide-react";
 
 const services = [
     {
@@ -26,11 +26,11 @@ const services = [
     },
     {
         id: "03",
-        title: "Scalable Cloud Infrastructure",
+        title: "Web Application Design & Development",
         icon: Cloud,
-        headline: "Secure, agile, and cost-optimized.",
+        headline: "Beautiful, fast, and conversion-focused.",
         description:
-            "Future-proof your business with multi-cloud expertise in AWS, Azure, and Google Cloud. We architect resilient environments that offer 99.9% availability, automated failover, and proactive cost management to maximize your ROI.",
+            "We create modern web applications with intuitive UX, responsive interfaces, and scalable front-end architecture. From polished UI design to robust development, we build digital products that look exceptional and perform smoothly across every device.",
         color: "from-purple-500/10 to-transparent",
         videoSrc: "/Cloud_Infrastructure_Video_Ready.mp4",
     },

@@ -44,7 +44,7 @@ export default function ServicesPage() {
                                     "In an era where technology defines competitive advantage, you
                                     need more than a service provider. You need a strategic partner
                                     who understands the nuances of your industry and the power of
-                                    digital transformation."
+                                    purposeful web application design and development."
                                 </p>
                                 <p>
                                     "At CMS Tech IT, we treat every project as if it were our own
@@ -90,14 +90,14 @@ export default function ServicesPage() {
                         />
                         <ServiceCard
                             icon={<Code className="w-6 h-6 text-white" />}
-                            title="Custom Software"
-                            description="BesPoke software solutions tailored to your unique business logic. If you can dream it, we can engineer it."
+                            title="Custom Web Applications"
+                            description="Tailor-made web applications designed around your workflows, users, and business goals. From dashboards to client portals, we build exactly what your team needs."
                             delay={0.3}
                         />
                         <ServiceCard
                             icon={<Zap className="w-6 h-6 text-white" />}
-                            title="Digital Transformation"
-                            description="Modernize legacy systems and migrate to cloud-native architectures that ensure future-proof scalability."
+                            title="UI/UX Design & Frontend Development"
+                            description="Engaging interfaces built with strong design systems, smooth interactions, and responsive development that turns ideas into memorable user experiences."
                             delay={0.4}
                         />
                     </div>
