@@ -8,25 +8,21 @@ interface IntroProps {
 }
 
 export default function Intro({ onComplete }: IntroProps) {
-    const [step, setStep] = useState<"initial" | "expanded" | "final" | "exit">("initial");
+    const [step, setStep] = useState<"initial" | "final" | "exit">("initial");
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
     // Sequence Logic
     useEffect(() => {
-        // Step 1: Wait -> Expand (CMS -> Creative My Space)
-        const expandTimer = setTimeout(() => setStep("expanded"), 600);
+        // Step 1: Reveal the supporting brand line
+        const techTimer = setTimeout(() => setStep("final"), 1300);
 
-        // Step 2: Wait -> Show TECH IT
-        const techTimer = setTimeout(() => setStep("final"), 1600);
-
-        // Step 3: Wait -> Exit
+        // Step 2: Exit intro
         const exitTimer = setTimeout(() => {
             setStep("exit");
             setTimeout(onComplete, 600);
-        }, 3000);
+        }, 2900);
 
         return () => {
-            clearTimeout(expandTimer);
             clearTimeout(techTimer);
             clearTimeout(exitTimer);
         };
@@ -130,9 +126,7 @@ export default function Intro({ onComplete }: IntroProps) {
         },
     };
 
-    const letterTransition = { duration: 0.6, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] };
-
-    const isExpanded = step === "expanded" || step === "final" || step === "exit";
+    const brandLetters = ["C", "M", "S"];
 
     return (
         <motion.div
@@ -151,68 +145,47 @@ export default function Intro({ onComplete }: IntroProps) {
             />
 
             <div className="relative z-10 flex flex-col items-center">
-                {/* Creative */}
-                <div className="flex items-baseline text-4xl md:text-6xl lg:text-8xl font-bold text-[#1A1817] tracking-tighter">
+                <div className="relative">
+                    <motion.div
+                        initial={{ scaleX: 0, opacity: 0 }}
+                        animate={{ scaleX: 1, opacity: 1 }}
+                        transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+                        className="absolute inset-x-6 top-1/2 h-5 md:h-7 -translate-y-1/2 rounded-full bg-gradient-to-r from-[#FFCC80]/0 via-[#FFCC80]/80 to-[#FF7043]/0 blur-xl"
+                    />
 
-                    {/* Creative */}
-                    <div className="flex items-baseline">
-                        <motion.span layout transition={letterTransition}>C</motion.span>
-                        <motion.span
-                            initial={{ width: 0, opacity: 0 }}
-                            animate={isExpanded ? { width: "auto", opacity: 1 } : { width: 0, opacity: 0 }}
-                            transition={letterTransition}
-                            className="overflow-hidden whitespace-nowrap inline-flex items-baseline py-2 pr-1 -my-2"
-                        >
-                            reative
-                        </motion.span>
+                    <div className="relative flex items-center justify-center gap-4 md:gap-8 text-6xl md:text-8xl lg:text-[9rem] font-bold text-[#1A1817] tracking-[0.18em] md:tracking-[0.22em]">
+                        {brandLetters.map((letter, index) => (
+                            <motion.span
+                                key={letter}
+                                initial={{ y: 36, opacity: 0, filter: "blur(10px)" }}
+                                animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+                                transition={{
+                                    duration: 0.75,
+                                    delay: index * 0.14,
+                                    ease: [0.16, 1, 0.3, 1],
+                                }}
+                                className="inline-block"
+                            >
+                                {letter}
+                            </motion.span>
+                        ))}
                     </div>
 
                     <motion.div
-                        initial={{ width: "1.5rem" }}
-                        animate={isExpanded ? { width: "1rem" } : { width: "1.5rem" }}
-                        className="w-3 md:w-6"
+                        initial={{ scaleX: 0, opacity: 0 }}
+                        animate={{ scaleX: 1, opacity: 1 }}
+                        transition={{ duration: 0.8, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                        className="mx-auto mt-4 h-[2px] w-28 md:w-40 origin-center rounded-full bg-gradient-to-r from-transparent via-[#FF7043] to-transparent"
                     />
-
-                    {/* My */}
-                    <div className="flex items-baseline">
-                        <motion.span layout transition={letterTransition}>M</motion.span>
-                        <motion.span
-                            initial={{ width: 0, opacity: 0 }}
-                            animate={isExpanded ? { width: "auto", opacity: 1 } : { width: 0, opacity: 0 }}
-                            transition={letterTransition}
-                            className="overflow-hidden whitespace-nowrap inline-flex items-baseline py-2 pr-1 -my-2"
-                        >
-                            y
-                        </motion.span>
-                    </div>
-
-                    <motion.div
-                        initial={{ width: "1.5rem" }}
-                        animate={isExpanded ? { width: "1rem" } : { width: "1.5rem" }}
-                        className="w-3 md:w-6"
-                    />
-
-                    {/* Space */}
-                    <div className="flex items-baseline">
-                        <motion.span layout transition={letterTransition}>S</motion.span>
-                        <motion.span
-                            initial={{ width: 0, opacity: 0 }}
-                            animate={isExpanded ? { width: "auto", opacity: 1 } : { width: 0, opacity: 0 }}
-                            transition={letterTransition}
-                            className="overflow-hidden whitespace-nowrap inline-flex items-baseline py-2 pr-1 -my-2"
-                        >
-                            pace
-                        </motion.span>
-                    </div>
                 </div>
 
                 {/* TECH IT Reveal */}
-                <div className="mt-2 md:mt-4 overflow-hidden h-16 md:h-24 flex items-center justify-center">
+                <div className="mt-4 md:mt-6 overflow-hidden h-16 md:h-24 flex items-center justify-center">
                     <motion.div
                         initial={{ y: "100%", opacity: 0 }}
                         animate={step === "final" || step === "exit" ? { y: "0%", opacity: 1 } : { y: "100%", opacity: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="text-2xl md:text-4xl font-sans font-bold text-accent tracking-[0.2em]"
+                        className="text-xl md:text-3xl font-sans font-bold text-accent tracking-[0.45em]"
                     >
                         TECH IT
                     </motion.div>

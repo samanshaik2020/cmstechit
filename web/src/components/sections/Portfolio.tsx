@@ -9,42 +9,54 @@ const projects = [
         title: "Squpage",
         category: "Landing Page Builder",
         description: "Create high-converting landing pages in minutes with our intuitive builder.",
-        image: "/placeholder-project-1.jpg",
+        image: "/web.svg",
+        imageClassName: "object-contain p-12",
+        frameClassName: "bg-gradient-to-br from-indigo-50 via-white to-purple-100",
         link: "https://squpage.com"
     },
     {
         title: "SeoInk",
         category: "SEO Optimization",
         description: "Advanced SEO analysis and optimization tools for modern web applications.",
-        image: "/placeholder-project-2.jpg",
+        image: "/projects/seolnk.jpg",
+        imageClassName: "object-cover object-top",
+        frameClassName: "bg-slate-100",
         link: "https://seolnk.com"
     },
     {
         title: "TextBehindImage",
         category: "Creative Web Tool",
         description: "A web application for generating striking text-behind-image visuals with a clean, user-friendly workflow.",
-        image: "/placeholder-project-3.jpg",
+        image: "/projects/textbehindimage.webp",
+        imageClassName: "object-cover object-center",
+        frameClassName: "bg-slate-100",
         link: "https://textbehindimage.com"
     },
     {
         title: "PopiUp",
         category: "Marketing Platform",
         description: "A conversion-focused platform for creating engaging popups and on-site campaigns for modern websites.",
-        image: "/placeholder-project-4.jpg",
+        image: "/branding.svg",
+        imageClassName: "object-contain p-12",
+        frameClassName: "bg-gradient-to-br from-rose-50 via-white to-orange-100",
         link: "https://popiup.com"
     },
     {
         title: "NewsZ9",
         category: "News Platform",
         description: "A fast, content-rich news website designed for smooth reading experiences across desktop and mobile.",
-        image: "/placeholder-project-5.jpg",
+        image: "/projects/newsz9.jpg",
+        imageClassName: "object-cover object-center",
+        frameClassName: "bg-slate-100",
         link: "https://newsz9.com"
     },
     {
         title: "Kitchen Made Health",
         category: "Health & Wellness",
         description: "A polished wellness-focused website built to showcase healthy living content, services, and brand trust.",
-        image: "/placeholder-project-6.jpg",
+        image: "/projects/kitchenmadehealth.jpg",
+        imageClassName: "object-cover object-center",
+        frameClassName: "bg-slate-100",
         link: "https://kitchenmadehealth.com"
     },
 ];
@@ -81,15 +93,19 @@ export default function Portfolio() {
                             transition={{ delay: index * 0.2 }}
                             className="group cursor-pointer"
                         >
-                            <Link href={project.link} target="_blank" className="block h-full">
-                                <div className="relative aspect-video overflow-hidden rounded-xl bg-gray-100 mb-6">
-                                    {/* 
-                      Using a colored div as placeholder if no image updates.
-                      In a real scenario, use Image component with actual sources. 
-                    */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 group-hover:scale-105 transition-transform duration-500" />
-                                    <div className="absolute inset-0 flex items-center justify-center">
-                                        <span className="text-gray-400 text-3xl font-bold">{project.title}</span>
+                            <Link href={project.link} target="_blank" rel="noreferrer" className="block h-full">
+                                <div className={`relative aspect-video overflow-hidden rounded-xl mb-6 border border-gray-200 shadow-sm ${project.frameClassName}`}>
+                                    <img
+                                        src={project.image}
+                                        alt={`${project.title} project preview`}
+                                        loading="lazy"
+                                        className={`absolute inset-0 h-full w-full group-hover:scale-105 transition-transform duration-700 ${project.imageClassName}`}
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                                    <div className="absolute inset-x-0 bottom-0 p-5 text-white">
+                                        <div className="text-xs uppercase tracking-[0.22em] text-white/80">
+                                            {project.link.replace("https://", "")}
+                                        </div>
                                     </div>
                                 </div>
 

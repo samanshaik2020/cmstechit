@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popiup - Smart Popup Links for Marketing Campaigns</title>
+  <meta name="description"
+    content="Create intelligent short links with customizable popup campaigns. Monetize your traffic while delivering exceptional user experiences." />
+
+  <!-- SEO Meta Tags -->
+  <meta name="keywords"
+    content="popup links, short links, link monetization, marketing campaigns, conversion optimization, popup campaigns, link management, traffic monetization" />
+  <meta name="author" content="Popiup" />
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="ADD_YOUR_VERIFICATION_CODE_HERE" />
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Popiup - Smart Popup Links for Marketing Campaigns" />
+  <meta property="og:description"
+    content="Create intelligent short links with customizable popup campaigns. Monetize your traffic while delivering exceptional user experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://popiup.com" />
+  <meta property="og:image" content="/og-image.png" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Popiup - Smart Popup Links for Marketing Campaigns" />
+  <meta name="twitter:description"
+    content="Create intelligent short links with customizable popup campaigns. Monetize your traffic." />
+  <meta name="twitter:image" content="/twitter-image.png" />
+
+  <!-- Favicon - Multiple sizes for better Google indexing -->
+  <link rel="icon" type="image/svg+xml" href="https://popiup.com/favicon.svg?v=2" />
+  <link rel="icon" type="image/x-icon" href="https://popiup.com/favicon.ico?v=2" />
+  <link rel="shortcut icon" href="https://popiup.com/favicon.ico?v=2" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://popiup.com/favicon-32x32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://popiup.com/favicon-16x16.png?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://popiup.com/apple-touch-icon.png?v=2" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#6D28D9" />
+
+  <!-- Preload Critical Resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script type="module" crossorigin src="/assets/index-DkgvfnQl.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BISHxxKY.css">
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Popiup",
+        "applicationCategory": "MarketingApplication",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Create intelligent short links with customizable popup campaigns. Monetize your traffic while delivering exceptional user experiences."
+      }
+    </script>
+</body>
+
+</html>
